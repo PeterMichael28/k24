@@ -3,7 +3,7 @@ import { AiFillCaretRight } from "react-icons/ai";
 
 
 const MobileSingleNav = ({text, isSelected, setIsSelected, drop, lists}) => {
-    console.log(text, isSelected)
+    
     return (
       <div className={`${isSelected === text && 'bg-[#E83B48]  w-full items-start p-2'}`}>
         <div className={`flex space-x-1 items-center text-white uppercase text-[1rem] font-semibold cursor-pointer tracking-wide relative `} onClick={() => setIsSelected(text) } >
@@ -36,14 +36,14 @@ const MobileNav = ({isOpen, isSelected, setIsSelected}) => {
 
   return (
     <>
-      <div className={ `flex w-full h-fit px-5 flex-col space-y-5 py-4 bg-[#2b4d85] lg:hidden items-start transition-all duration-500 -translate-y-full relative -z-2 ${ isOpen && '-translate-y-2' } mobile-nav` }>
+      <div className={ `flex w-full h-fit px-5 flex-col space-y-5 py-4 bg-[#2b4d85] lg:hidden items-start transition-all duration-500  relative -z-2 ${ isOpen ? '-translate-y-0' : '-translate-y-full' } mobile-nav` }>
           <MobileSingleNav isSelected={ isSelected } setIsSelected={ setIsSelected } text='Priorities' drop lists={priorities } />
           <MobileSingleNav isSelected={ isSelected } setIsSelected={ setIsSelected } text='Take Action' drop lists={action }/>
           <MobileSingleNav isSelected={ isSelected } setIsSelected={ setIsSelected } text='News' drop lists={news } />
           <MobileSingleNav isSelected={ isSelected } setIsSelected={ setIsSelected } text='MERCH' />
           <MobileSingleNav isSelected={ isSelected } setIsSelected={ setIsSelected } text='Videos'/>
           <MobileSingleNav isSelected={ isSelected } setIsSelected={ setIsSelected } text='About' drop lists={about }/>
-    </div> )
+    </div> 
   
   </>
   )

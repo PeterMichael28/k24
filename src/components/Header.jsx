@@ -12,18 +12,20 @@ const Header = () => {
 
   useEffect( () => {
     let s_p = window.scrollY;
-    console.log(s_p)
+  
     if (s_p > 100){
        setScroll(true)
-       console.log('first')
+     
     } else {
       setScroll(false)
     }
     }, [])
+
+    console.log(isOpen)
   return (
-      <div className={`w-full fixed top-0 left-0 z-30 ${scroll && 'sticky top-0 left-0 z-30'}`}>
+      <div className={`w-full fixed left-0 z-[50] `}>
       
-      <div className={`navbar relative z-50`}>
+      <div className={`navbar relative z-[70]`}>
           
       <div className="navbar-container">
         <a href="/" className="py-1 mr-4">
@@ -58,7 +60,7 @@ const Header = () => {
       </div>
 
        {/*  mobile navlinks*/ }
-      <MobileNav isOpen={ isOpen } isSelected={ isSelected } setIsSelected={ setIsSelected } />
+      {isOpen && <MobileNav isOpen={ isOpen } isSelected={ isSelected } setIsSelected={ setIsSelected } />}
       </div>
   )
 }

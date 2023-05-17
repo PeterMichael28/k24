@@ -12,6 +12,8 @@
 }
 
 
+/* header section */
+
 .navbar {
   background: #fff !important;
   font-family: "Freight Sans Pro", sans-serif;
@@ -70,6 +72,11 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/*end of header section */
+
+
+/* hero section */
+
 @media screen and (min-width: 1001px) {
 
   /* .hero {
@@ -81,7 +88,7 @@
 
  .hero {
       background-image: url(https://kennedy24.b-cdn.net/desktop-hero-bg/Hero3-1418.jpg);
-      background-position: center 4 0px !important;
+      background-position: center 55px !important;
       font-family: 'Roboto Condensed', sans-serif;
   }
 
@@ -147,4 +154,245 @@
 .join > h1{
   letter-spacing: -2px;
 }
+}
+
+/* end of hero section */
+
+
+
+/* video section */
+#videos {
+  background:url('https://kennedy24.b-cdn.net/featured-content/background-min.jpg');
+  background-size: cover !important;
+  padding: 6rem 0;
+}
+
+.container {
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+height: 90vh;
+}
+
+/* @media (width >= 1200px) {
+
+  .container {
+     
+  }
+} */
+
+@media (992px >= width <= 1200px) {
+  .container {
+      max-width: 960px;
+  }
+
+
+}  
+
+@media (768px >= width <= 992px) {
+
+  .container {
+      max-width: 720px;
+  }
+}
+
+
+
+@media (576px <= width <= 768px) {
+  .container {
+      max-width: 540px;
+      
+  }
+
+  #videos .container{
+    height: 60vh;
+  }
+ 
+}
+
+@media (width <= 576px) {
+  .container {
+    width: 100%;
+    
+}
+
+#videos .container{
+  height: 40vh;
+}
+
+}
+
+@media(width <= 768px) {
+  #videos{
+    margin-top: 10.5rem;
+    z-index: 40;
+    position: relative;
+  }
+ 
+}
+
+
+.video-wrapper{
+  width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border: 8px solid #adb5bd;
+}
+
+.iframe{
+  border: none;
+
+
+  height: 100%;
+  width: 100%;
+}
+
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 3rem !important;
+}
+
+.social a{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  min-width: 210px;
+  box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: "Freight Sans Pro", sans-serif;
+  font-size: .9rem;
+  gap: 10px;
+  color: white;
+  border-radius: 6px;
+  transition: .6s ease all;
+}
+
+
+@media(width <= 768px) {
+  .social{
+    gap: 1px;
+  }
+  .social a{
+    transform: scale(.8);
+  }
+ 
+}
+.social a:hover {
+  opacity: .7;
+}
+
+.btn {
+  text-transform: uppercase;
+  
+  font-size: 1rem;
+  padding: 0.25rem 0.95rem;
+  font-weight: 600;
+}
+
+.social a svg {
+  width: 30px;
+}
+
+/* end of video section */
+
+
+/* priorities section */
+#priorities {
+  background-color: #dbe8f6 !important;
+  padding: 5rem 0;
+}
+  
+
+/* priority lists */
+@media (max-width: 1399px) {
+.priority-ul {
+    width: 21.75rem;
+    font-size: 1.4rem;
+}
+
+.priority-ul li{
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+    border: 0 none !important;
+    color: #fff;
+   
+
+    border-radius: 0.25rem;
+    -webkit-transition: all .6s ease;
+    transition: all .4s ease;
+    font-family: "Freight Sans Pro", sans-serif;
+    cursor: pointer;
+    font-weight: 700;
+}
+.priority-ul li:hover{
+  background: #E83B48;
+}
+
+
+
+
+.content {
+    width: calc(100% - 25.75rem);
+    padding-left: 2rem;
+    border: 1px solid white;
+    background-color: white;
+}
+
+.content .con {
+    width: 100%;
+    padding: 3rem 7%;
+    text-align: left;
+    font-family: "Freight Sans Pro", sans-serif;
+    transition: .5s ease all;
+}
+
+
+}
+
+@media(width <= 768px) {
+  .priority-ul {
+    width: 100%;
+    font-size: 1.6rem;
+    text-transform: uppercase;;
+}
+
+.priority-ul li{
+  margin-bottom: 0.3rem;
+}
+}
+
+@media(width <= 576px) {
+  .priority-ul {
+    width: 100%;
+    font-size: 1.4rem;
+    text-transform: uppercase;;
+}
+
+
+}
+
+
+.con-p{
+  font-family: 'Source Serif Pro', serif;
 }

@@ -1,1 +1,42 @@
+/* utils */
 
+.title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: .6rem;
+    text-align: center;
+    font-weight: 900;
+    color: #2b4d85;
+    font-family: "Freight Sans Pro", sans-serif;
+}
+
+@media(width <= 768px) {
+    .title{
+        font-size: 2rem;
+    }
+  }
+
+.title.sm{
+    font-size: 1.8rem;
+    text-align: left;
+    margin-top: 6px;
+    padding-bottom: 0.9rem;
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 2px;
+    background: #E83B48;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.title.sm::after{
+    margin-left: 3rem;
+}
