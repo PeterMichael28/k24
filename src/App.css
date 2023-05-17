@@ -1,0 +1,150 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Source Serif Pro', serif;
+}
+
+
+.navbar {
+  background: #fff !important;
+  font-family: "Freight Sans Pro", sans-serif;
+  font-size: 1.2rem;
+  padding: 1.5rem 1rem;
+}
+
+@media screen and (min-width: 1300px){
+.navbar-container {
+    max-width: 1144px;
+}
+}
+@media screen and (min-width: 1200px){
+.navbar-container {
+    max-width: 1140px;
+}
+}
+.navbar-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.navbar-brand-img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-height: 60px;
+  min-height: 32px;
+
+}
+
+.nav-ul li {
+  cursor: pointer;
+  transition: .5s ease all;
+  width: 100%;
+  text-align: left;
+  padding-inline: 15px;
+  padding-block: 8px;
+}
+
+.nav-ul li:hover{
+  background-color: #E83B48;
+  color: white;
+}
+
+
+.mobile-nav{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media screen and (min-width: 1001px) {
+
+  /* .hero {
+      background-position: center 60px !important;
+  } */
+}
+
+@media screen and (min-width: 768px) {
+
+ .hero {
+      background-image: url(https://kennedy24.b-cdn.net/desktop-hero-bg/Hero3-1418.jpg);
+      background-position: center 4 0px !important;
+      font-family: 'Roboto Condensed', sans-serif;
+  }
+
+
+}
+
+.form input{
+  display: block;
+  width: 100%;
+  /* height: calc(1.5em + 0.75rem + 2px); */
+  padding: 0.375rem 0.85rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4c555e;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  outline: none;
+}
+
+.form input:focus{
+  border: 2px solid #e83b49a7;
+}
+.form input::placeholder{
+  color: #71787d;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    font-family: "Freight Sans Pro", sans-serif;
+}
+
+.mobile-img{
+  position: absolute; 
+  height: auto;
+  margin: auto;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.join {
+ 
+  z-index: 20;
+  margin-left: 0;
+    background: #dbe8f6;
+    padding: 1.5rem;
+    margin: auto;
+    margin-top: 29.4rem;
+    width: 94%;
+    
+}
+
+.join > h1{
+  letter-spacing: -2px;
+}
+}
