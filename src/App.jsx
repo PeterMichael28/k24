@@ -1,21 +1,18 @@
 
-import Header from './components/Header';
+
+import { createBrowserRouter } from 'react-router-dom';
 import './App.css'
-import Hero from './components/hero/Hero';
-import Videos from './components/videoSection/Videos';
-import Priorities from './components/priorities/Priorities';
+import Home from './pages/Home';
+import Donate from './pages/Donate';
 
-function App() {
- 
 
-  return (
-    <>
-      <Header />
-      <Hero />
-      <Videos />
-      <Priorities />
-    </>
-  )
-}
-
-export default App
+export const router = createBrowserRouter([
+  {
+    path: "/k24",
+    element: <Home />
+  },
+  {
+    path: "/k24/donate",
+    element: <Donate />
+  }
+]);

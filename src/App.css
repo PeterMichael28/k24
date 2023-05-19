@@ -18,7 +18,7 @@
   background: #fff !important;
   font-family: "Freight Sans Pro", sans-serif;
   font-size: 1.2rem;
-  padding: 1.5rem 1rem;
+ 
 }
 
 @media screen and (min-width: 1300px){
@@ -130,10 +130,10 @@
 }
 
 .mobile-img{
-  position: absolute; 
+
   height: auto;
   margin: auto;
-  top: 20%;
+ 
   left: 0;
   right: 0;
   bottom: 0;
@@ -146,7 +146,7 @@
     background: #dbe8f6;
     padding: 1.5rem;
     margin: auto;
-    margin-top: 29.4rem;
+  
     width: 94%;
     
 }
@@ -173,7 +173,11 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-height: 90vh;
+
+}
+
+#videos .container {
+  height: 90vh;
 }
 
 /* @media (width >= 1200px) {
@@ -183,7 +187,7 @@ height: 90vh;
   }
 } */
 
-@media (992px >= width <= 1200px) {
+@media ( width <= 1200px) {
   .container {
       max-width: 960px;
   }
@@ -191,7 +195,7 @@ height: 90vh;
 
 }  
 
-@media (768px >= width <= 992px) {
+@media ( width <= 992px) {
 
   .container {
       max-width: 720px;
@@ -200,7 +204,7 @@ height: 90vh;
 
 
 
-@media (576px <= width <= 768px) {
+@media (width <= 768px) {
   .container {
       max-width: 540px;
       
@@ -255,14 +259,12 @@ height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -ms-flex-flow: row;
+  flex-flow: row;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   gap: 30px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   margin-top: 3rem !important;
 }
 
@@ -320,6 +322,8 @@ height: 90vh;
 #priorities {
   background-color: #dbe8f6 !important;
   padding: 5rem 0;
+  /* margin-bottom: 3rem; */
+
 }
   
 
@@ -395,4 +399,11 @@ height: 90vh;
 
 .con-p{
   font-family: 'Source Serif Pro', serif;
+}
+
+@media (max-width: 1200px) {
+  .banner h3 {
+      font-size: calc(1.3rem + .6vw);
+  }
+
 }

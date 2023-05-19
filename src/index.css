@@ -40,3 +40,66 @@
 .title.sm::after{
     margin-left: 3rem;
 }
+
+
+@media (width < 440px) {
+    .navbar-brand-img { 
+        max-height: 45px;
+      }
+
+
+      
+.mobile-img{
+    top: 13%;
+    height: 70%;
+  }
+
+  .join {
+    
+  }
+  #videos{
+    margin-top: -8.8rem;
+  }
+
+.social a {
+    font-size: 0.7rem;
+    margin: 0;
+}
+  
+#priorities {
+    background-color: #dbe8f6 !important;
+    padding: 3rem 0 5rem;
+  }
+      
+
+  .banner{
+    font-family: "Freight Sans Pro", sans-serif;
+  }
+}
+@media (width <= 420px) {
+    .join {
+       
+    }
+
+    #videos{
+        margin-top: 0;
+      }
+}
+
+footer p {
+    font-family: "Freight Sans Pro", sans-serif;
+    cursor: pointer;
+}
+
+
+#donate footer {
+  background-color: #dbe8f6;
+  font-family: "Freight Sans Pro", sans-serif;
+  border-top: 3px solid #E83B48;
+}
+
+#donate .container{
+  padding-left: 0;
+  padding-right: 0;
+}
+
