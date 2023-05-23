@@ -8,11 +8,11 @@ import Donate from './pages/Donate';
 
 export const router = createBrowserRouter([
   {
-    path: "/k24",
+    path: "/",
     element: <Home />
   },
   {
-    path: "/k24/donate",
+    path: "/donate",
     element: <Donate />
   }
 ]);
