@@ -103,3 +103,74 @@ footer p {
   padding-right: 0;
 }
 
+
+.input-div, .card-input{
+ 
+
+  padding-block: 9px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.input-div{
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 405px;
+}
+
+.card-input{
+  width: 100%;
+  border: 1px solid rgb(177, 174, 174);
+}
+
+.input-div input {
+  outline: none;
+}
+
+.input-div input:nth-of-type(1) {
+  width: 74%;
+}
+
+.input-div input:nth-of-type(2) {
+width: 19%;
+}
+.input-div input:nth-of-type(3) {
+ width: 13%;
+}
+.input-div input::placeholder{
+  font-size: 17.5px;
+  font-weight: light;
+  letter-spacing: -1px;
+  font-family: "Freight Sans Pro", sans-serif;
+}
+.income, .submit{
+  font-family: "Freight Sans Pro", sans-serif;
+}
+
+.input-div .icon, .amountIcon{
+  font-size: 1.4rem;
+  position: absolute;
+  left: 7px;
+  color: rgb(225, 222, 222);
+}
+
+.card-label{
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 600;
+}
+
+.dual-input div {
+  
+}
+
+@media(width <= 400px) {
+ 
+  .input-div{
+    padding-left: 35px;
+    width: 305px;
+  }
+  
+
+}
